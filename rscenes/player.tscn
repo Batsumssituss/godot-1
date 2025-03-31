@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://23v1p5prlc3l"]
 
-[ext_resource type="Script" uid="uid://pfaclcbu5uay" path="res://Player/player.gd" id="1_4ntmi"]
+[ext_resource type="Script" uid="uid://pfaclcbu5uay" path="res://scrpits/player.gd" id="1_4ntmi"]
 [ext_resource type="Texture2D" uid="uid://bei7x67psb4c4" path="res://Assets_PixelAdventure/Main Characters/Mask Dude.png" id="1_l8h54"]
 [ext_resource type="Script" uid="uid://tq2urcsgut8q" path="res://camara/camera_2d.gd" id="3_btcbx"]
 
@@ -115,4 +115,8 @@ libraries = {
 }
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1, 27)
+zoom = Vector2(1.2, 1.2)
+limit_left = -450
+limit_right = 1400
 script = ExtResource("3_btcbx")
