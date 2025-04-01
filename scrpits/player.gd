@@ -4,10 +4,12 @@ var speed := 120
 var direccion := 0.0
 var jump := 250
 const gravity := 9
-
+var pomes := 0
 
 @onready var anim := $AnimationPlayer
 @onready var sprite := $Sprite2D
+
+signal dues_pomes
 
 func _physics_process(delta):
 	direccion = Input.get_axis("ui_left","ui_right")
@@ -27,7 +29,11 @@ func _physics_process(delta):
 
 
 	move_and_slide()
-var pomes := 0
+
+
 func agafa_poma():
 	pomes += 1
+	print(pomes)
+	if pomes >= 2:
+		dues_pomes.emit()
 	

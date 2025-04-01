@@ -7,7 +7,14 @@ func _process(delta):
 	pass
 	
 
-var cambia_a_final = preload("res://rscenes/final.tscn")
+var canvia_a_final = preload("res://rscenes/final.tscn")
+
+
+
+func _on_player_dues_pomes():
+	monitoring = true
+	visible = true
+
+
 func _on_body_entered(body):
-	if pomes = 2:
-		cambia_a_final
+	get_tree().change_scene_to_file("res://rscenes/final.tscn")
