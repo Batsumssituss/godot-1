@@ -27,3 +27,7 @@ func _physics_process(delta):
 
 
 	move_and_slide()
+var pomes := 0
+func agafa_poma():
+	pomes += 1
+	
