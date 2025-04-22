@@ -119,3 +119,11 @@ position = Vector2(1, 27)
 zoom = Vector2(1.2, 1.2)
 limit_left = -450
 script = ExtResource("3_btcbx")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = -176.0
+offset_top = -72.0
+offset_right = -119.0
+offset_bottom = -49.0
+text = "Pomes: \"agafa_pomes\""
